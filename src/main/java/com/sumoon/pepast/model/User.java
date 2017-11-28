@@ -1,6 +1,7 @@
-package com.sumoon.pepast.user.model;
+package com.sumoon.pepast.model;
 
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by Liuyp on 2017/11/27.
@@ -22,6 +23,12 @@ public class User {
     /** 用户类型 */
     private String userType;
 
+    /** 用户状态 */
+    private String userStatus;
+
+    /** 用户级别 */
+    private String userLevel;
+
     private String email;
 
     /** 性别 */
@@ -29,9 +36,6 @@ public class User {
 
     /** 是否删除 */
     private Boolean isDelete;
-
-    /** 用户状态 */
-    private String userStatus;
 
     /***/
     private Date birthday;
@@ -41,7 +45,7 @@ public class User {
     private Integer version;
 
     /** 所属餐馆  */
-
+    private Set<Restaurant> restaurants;
 
 
 
